@@ -1,0 +1,172 @@
+@keyframes backgroundShimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at center, 
+                                rgb(133, 197, 249) 0%, 
+                                rgb(5, 88, 160) 50%, 
+                                rgba(21,101,192,1) 100%);
+    background-size: 200% 200%;
+    animation: backgroundShimmer 15s ease infinite;
+    color: #fff;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+h1, h2 {
+    color: #ffffffeb;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+input[type='text'],
+input[type='date'],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1565C0;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #0D47A1;
+}
+.pez-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.carousel-control.prev {
+    left: 10px;
+}
+.carousel-control.next {
+    right: 10px;
+}
+
+
+/* ----------- Media Queries for Responsiveness ----------- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    input[type='text'],
+    input[type='date'],
+    textarea,
+    select {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 7px;
+    }
+
+    input[type='text'],
+    input[type='date'],
+    textarea,
+    select {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+.lista img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+

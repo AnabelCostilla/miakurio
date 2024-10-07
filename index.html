@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Acuario</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Incluir Firebase desde el CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <header>
+        <h1>MI ACUARIO</h1>
+    </header>
+    <main>
+        <section id="gallery">
+
+            <div class="carousel">
+                <div class="carousel-inner"> 
+                    <div class="carousel-item"><img src="./img peces/colydora.png" alt="Pez 1"></div>
+                    <div class="carousel-item"><img src="./img peces/andcystru limpia vidrio.png" alt="Pez 2"></div>
+                    <div class="carousel-item"><img src="./img peces/monjita.png" alt="Pez 3"></div>
+                    <div class="carousel-item"><img src="./img peces/guppys macho.png" alt="Pez 4"></div>
+                    <div class="carousel-item"><img src="./img peces/guppys hembra dos.png" alt="Pez 5"></div>
+                    <div class="carousel-item"><img src="./img peces/barbus 1.png" alt="Pez 6"></div>
+                    <div class="carousel-item"><img src="./img peces/barbus 2.png" alt="Pez 7"></div>
+                    <div class="carousel-item"><img src="./img peces/pez1.png" alt="Pez 9"></div>
+                    <div class="carousel-item"><img src="./img peces/pez (2).png" alt="Pez 9"></div>
+                    <div class="carousel-item"><img src="./img peces/pez (3).png" alt="Pez 9"></div>
+                    <div class="carousel-item"><img src="./img peces/pez (4).png" alt="Pez 9"></div>
+                    <div class="carousel-item"><img src="./img peces/pez (5).png" alt="Pez 9"></div>
+                    <div class="carousel-item"><img src="./img peces/pez (5).png" alt="Pez 9"></div>
+                
+                </div>
+                <a href="#" class="carousel-control prev">&lt;</a>
+                <a href="#" class="carousel-control next">&gt;</a>
+            </div>
+        </section>
+        <section id="description">
+          
+            <p>En mi acuario hay vidas que se mueven con una mezcla 
+                de colores y especies. Las pequeñas CORYDORAS (limpia fondo), con su forma esbelta
+                y su comportamiento tranquilo se quedan en el fondo siempre en 
+                busca de alimentos, son de tonos plateados que contrastan suavemente
+                con los de las MONJITAS color salvaje, que nadan en grupo pacíficamente.
+                Los Guppys, con su cola de forma de abanico, 
+                exhibiendo sus colores brillantes,entre ellos los ANDCYSTRU (limpia vidrio), con su apariencia única
+                y comportamiento reservado, se adhieren a la superficie del acuario
+                manteniéndolo limpio y ordenado, también están los BARBOS, con sus 
+                movimientos rápidos y curiosos, recorren todo el espacio con sus tonalidades platados y anaranjados.
+                
+            </p>
+        </section>
+
+        <h2>Mis Peces</h2>
+        <form id="misPecesForm">
+            <input type="text" id="nombreAdoptado" placeholder="Nombre adoptado" required>
+            <input type="text" id="nombreCientificoMiPez" placeholder="Nombre científico" required>
+            <input type="text" id="nombreComunMiPez" placeholder="Nombre común" required>
+            <input type="date" id="fechaAdquisicion" required>
+            <textarea id="caracteristicas" placeholder="Características adicionales" required></textarea>
+            <select id="comportamiento" required>
+                <option value="">Seleccione el comportamiento</option>
+                <option value="Activo">Activo</option>
+                <option value="Pasivo">Pasivo</option>
+                <option value="Agresivo">Agresivo</option>
+                <option value="Tímido">Tímido</option>
+            </select>
+            <select id="estadoSalud" required>
+                <option value="">Seleccione el estado de salud</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Regular">Regular</option>
+                <option value="Malo">Malo</option>
+            </select>
+            <select id="aislamiento" required>
+                <option value="">¿Requiere aislamiento?</option>
+                <option value="No">No</option>
+                <option value="Sí">Sí</option>
+            </select>
+            <textarea id="observacion" placeholder="Observaciones"></textarea>
+            <button type="submit">Agregar Mi Pez</button>
+        </form>
+   <div id="listaMisPeces"></div>
+    </main> 
+
+    <div class="lista">
+        <img src="./peces/Richard.png" alt="">
+        <img src="./peces/parker.png" alt="">
+        <img src="./peces/Bocón.png" alt="">
+        <img src="./peces/maximo.png" alt="">
+        <img src="./peces/men's.png" alt="">
+        <img src="./peces/Benecia.png" alt="">
+        <img src="./peces/roma.png" alt="">
+        <img src="./peces/Barbus.png" alt="">
+        <img src="./peces/burbuja.png" alt="">
+        <img src="./peces/boina.png" alt="">
+
+    </div>
+
+    <footer>. Desarrollo web anabel.agent@gmail.com</footer>
+    <script src="java.js"></script>
+
+   <!-- Incluir Firebase desde un CDN -->
+   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+
+    <!-- Aquí va el script para interactuar con Firebase -->
+    <script src="app.js"></script>
+
+</body>
+</html>
